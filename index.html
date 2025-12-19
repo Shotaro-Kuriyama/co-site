@@ -3,768 +3,426 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="合同会社C&O｜携帯の乗り換え・料金見直し相談／サブスクリプションサービス推進代行／顧客獲得支援。複雑な選択をシンプルに、提案から実行まで伴走します。" />
-  <meta name="theme-color" content="#0b1020" />
+  <meta name="theme-color" content="#0B0F14" />
+  <meta name="color-scheme" content="light dark" />
 
-  <!-- Open Graph / Twitter -->
+  <title>合同会社C&O｜通信・サブスク・顧客獲得を“実行”で支える</title>
+  <meta name="description" content="合同会社C&Oは、通信・サブスク領域の実務支援会社です。携帯の乗り換え・料金見直し相談、サブスク推進代行、顧客獲得支援まで。意思決定の整理から運用・改善まで伴走します。" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="合同会社C&O｜通信・サブスク・顧客獲得を“実行”で支える" />
+  <meta property="og:description" content="迷いを減らし、納得して決められる状態をつくる。実行と改善で成果を定着させる支援。" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="合同会社C&O" />
-  <meta property="og:title" content="合同会社C&O｜通信・サブスク推進／顧客獲得支援" />
-  <meta property="og:description" content="携帯の乗り換え・料金見直し相談／サブスクリプションサービス推進代行／顧客獲得支援。わかりやすく、実行まで。" />
+  <meta property="og:image" content="assets/og.svg" />
   <meta property="og:locale" content="ja_JP" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="合同会社C&O" />
-  <meta name="twitter:description" content="通信・サブスク推進／顧客獲得支援" />
 
-  <!-- Favicon (inline SVG) -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs%3E%3CradialGradient id='g' cx='30%25' cy='30%25'%3E%3Cstop offset='0%25' stop-color='%23ffffff' stop-opacity='.8'/%3E%3Cstop offset='45%25' stop-color='%237c5cff'/%3E%3Cstop offset='100%25' stop-color='%230b1020'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect rx='28' width='128' height='128' fill='url(%23g)'/%3E%3Cpath d='M38 66c0 16 10 26 26 26 7 0 14-2 19-6l-6-8c-4 3-8 4-13 4-10 0-16-6-16-16 0-10 6-16 16-16 5 0 9 1 13 4l6-8c-5-4-12-6-19-6-16 0-26 10-26 26z' fill='%23ffffff' fill-opacity='.92'/%3E%3C/svg%3E" />
+  <!-- Performance: fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Noto+Sans+JP:wght@300..900&display=swap" rel="stylesheet" />
 
-  <title>合同会社C&O｜通信・サブスク推進／顧客獲得支援</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
 
   <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "LocalBusiness",
     "name": "合同会社C&O",
+    "description": "通信・サブスク領域の実務支援。携帯の乗り換え・料金見直し相談、サブスクリプション推進代行、顧客獲得支援。",
     "telephone": "+81-90-4074-6950",
+    "email": "akasabu36@gmail.com",
     "address": {
       "@type": "PostalAddress",
+      "postalCode": "353-0001",
       "addressRegion": "埼玉県",
       "addressLocality": "志木市",
       "streetAddress": "上宗岡4-20-10",
       "addressCountry": "JP"
-    },
-    "founder": [
-      {"@type": "Person", "name": "栗山 隼輔"},
-      {"@type": "Person", "name": "栗山 翔太朗"}
-    ],
-    "description": "携帯の乗り換え・料金見直し相談、サブスクリプションサービス推進代行、顧客獲得支援"
+    }
   }
   </script>
-
-  <style>
-    :root{
-      --bg: #0b1020;
-      --bg2: #070a14;
-      --card: rgba(255,255,255,.07);
-      --line: rgba(255,255,255,.14);
-      --txt: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.70);
-      --brand: #7c5cff;
-      --brand2: #22c55e;
-      --warn: #f59e0b;
-      --shadow: 0 18px 70px rgba(0,0,0,.36);
-      --shadow2: 0 10px 30px rgba(0,0,0,.22);
-      --radius: 20px;
-      --radius2: 28px;
-      --max: 1180px;
-      --ring: 0 0 0 4px rgba(124,92,255,.22);
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", "Meiryo", Arial, sans-serif;
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      color:var(--txt);
-      font-family: var(--font);
-      background:
-        radial-gradient(1200px 900px at 12% 12%, rgba(124,92,255,.34), transparent 60%),
-        radial-gradient(1100px 840px at 88% 10%, rgba(34,197,94,.18), transparent 60%),
-        radial-gradient(900px 700px at 50% 95%, rgba(255,255,255,.09), transparent 60%),
-        linear-gradient(180deg, var(--bg), var(--bg2));
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      overflow-x:hidden;
-    }
-
-    a{color:inherit; text-decoration:none}
-    .container{max-width:var(--max); margin:0 auto; padding:0 22px}
-
-    /* Accessibility */
-    .skip{
-      position:absolute; left:-999px; top:10px;
-      padding:10px 14px; border-radius:12px;
-      background: rgba(255,255,255,.10);
-      border:1px solid rgba(255,255,255,.18);
-      z-index:999;
-    }
-    .skip:focus{left:12px; outline:none; box-shadow: var(--ring)}
-    :focus-visible{outline:none; box-shadow: var(--ring); border-radius: 14px}
-
-    /* Header */
-    header{
-      position:sticky; top:0; z-index:80;
-      backdrop-filter: blur(16px);
-      background: linear-gradient(to bottom, rgba(11,16,32,.86), rgba(11,16,32,.62));
-      border-bottom: 1px solid rgba(255,255,255,.10);
-    }
-    .topbar{display:flex; align-items:center; justify-content:space-between; padding:14px 0; gap:14px}
-    .brand{display:flex; gap:12px; align-items:center; min-width: 240px}
-    .mark{
-      width:40px; height:40px; border-radius:14px;
-      background: radial-gradient(circle at 30% 25%, rgba(255,255,255,.65), rgba(124,92,255,.65) 38%, rgba(11,16,32,.92) 100%);
-      box-shadow: 0 18px 45px rgba(124,92,255,.24);
-      border: 1px solid rgba(255,255,255,.12);
-      display:grid; place-items:center;
-      position:relative;
-      overflow:hidden;
-    }
-    .mark svg{opacity:.92}
-    .brand h1{font-size:15px; margin:0; letter-spacing:.08em}
-    .brand p{margin:0; font-size:12px; color:var(--muted)}
-
-    nav{display:flex; gap:14px; align-items:center; flex-wrap:wrap}
-    nav a{font-size:13px; color:var(--muted); padding:8px 10px; border-radius: 12px}
-    nav a:hover{color:var(--txt); background: rgba(255,255,255,.06)}
-
-    .pill{
-      display:inline-flex; align-items:center; justify-content:center;
-      padding:10px 14px; border-radius:999px;
-      border:1px solid rgba(255,255,255,.18);
-      background: rgba(255,255,255,.06);
-      color:var(--txt);
-      gap:10px;
-      transition: transform .18s ease, background .18s ease, border-color .18s ease;
-      box-shadow: var(--shadow2);
-      cursor:pointer;
-      user-select:none;
-    }
-    .pill:hover{transform: translateY(-1px); background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.26)}
-    .pill:active{transform: translateY(0)}
-    .pill.primary{
-      border-color: rgba(124,92,255,.40);
-      background: linear-gradient(135deg, rgba(124,92,255,.95), rgba(124,92,255,.45));
-    }
-
-    .rightControls{display:flex; gap:10px; align-items:center}
-
-    .hamburger{
-      width:44px; height:44px; border-radius: 14px;
-      border:1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.06);
-      display:none;
-      align-items:center;
-      justify-content:center;
-      box-shadow: var(--shadow2);
-    }
-
-    /* Mobile menu */
-    .menu{
-      position:fixed; inset:0; z-index:120;
-      background: rgba(0,0,0,.55);
-      backdrop-filter: blur(10px);
-      display:none;
-    }
-    .menu .sheet{
-      position:absolute; right:0; top:0; bottom:0;
-      width:min(420px, 92vw);
-      background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.06));
-      border-left: 1px solid rgba(255,255,255,.14);
-      box-shadow: var(--shadow);
-      padding:18px;
-    }
-    .menuTop{display:flex; justify-content:space-between; align-items:center; gap:12px; padding-bottom:12px; border-bottom:1px solid rgba(255,255,255,.10)}
-    .menuLinks{display:grid; gap:10px; padding:14px 0}
-    .menuLinks a{padding:12px 12px; border-radius:14px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.10); color:var(--txt)}
-    .menuLinks a:hover{background: rgba(255,255,255,.10)}
-
-    /* Background orbs */
-    main{position:relative}
-    .bgOrbs{position:absolute; inset:0; pointer-events:none; overflow:hidden}
-    .orb{position:absolute; width:520px; height:520px; border-radius:50%; filter: blur(40px); opacity:.22; animation: floaty 12s ease-in-out infinite}
-    .orb.one{left:-180px; top:120px; background: radial-gradient(circle at 30% 30%, rgba(124,92,255,.75), transparent 55%)}
-    .orb.two{right:-220px; top:220px; background: radial-gradient(circle at 30% 30%, rgba(34,197,94,.55), transparent 60%); animation-duration: 14s}
-    .orb.three{left:20%; bottom:-280px; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), transparent 62%); animation-duration: 16s}
-    @keyframes floaty{0%,100%{transform: translateY(0) translateX(0)}50%{transform: translateY(-18px) translateX(10px)}}
-
-    /* Hero */
-    .hero{padding:72px 0 26px}
-    .heroGrid{display:grid; gap:26px; grid-template-columns: 1.25fr .75fr; align-items:stretch}
-    .kicker{
-      display:inline-flex; gap:10px; align-items:center;
-      padding:8px 12px; border-radius:999px;
-      background: rgba(124,92,255,.14);
-      border: 1px solid rgba(124,92,255,.28);
-      color: rgba(255,255,255,.88);
-      font-size:12px;
-      letter-spacing:.06em;
-    }
-    .dot{width:9px; height:9px; border-radius:999px; background: var(--brand2); box-shadow: 0 0 0 6px rgba(34,197,94,.12)}
-    .hTitle{font-size: clamp(32px, 4.2vw, 52px); line-height: 1.12; margin: 14px 0 12px; letter-spacing: .01em}
-    .lead{color:var(--muted); font-size:16px; margin:0 0 22px}
-
-    .heroActions{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
-    .btn{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:12px 16px; border-radius:999px;
-      border: 1px solid rgba(255,255,255,.18);
-      background: rgba(255,255,255,.08);
-      box-shadow: var(--shadow2);
-      font-weight:800;
-      font-size:14px;
-      transition: transform .18s ease, background .18s ease, border-color .18s ease;
-    }
-    .btn.primary{background: linear-gradient(135deg, rgba(124,92,255,.96), rgba(124,92,255,.48)); border-color: rgba(124,92,255,.42)}
-    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.26)}
-    .btn.primary:hover{background: linear-gradient(135deg, rgba(124,92,255,1), rgba(124,92,255,.55)); border-color: rgba(124,92,255,.55)}
-
-    .panel{border:1px solid rgba(255,255,255,.10); background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.05)); border-radius: var(--radius2); box-shadow: var(--shadow); padding:18px; position:relative; overflow:hidden}
-    .panel:before{content:""; position:absolute; inset:-40px; background: radial-gradient(circle at 30% 25%, rgba(255,255,255,.16), transparent 45%); transform: rotate(18deg); pointer-events:none}
-
-    .miniTitle{font-weight:950; letter-spacing:.08em}
-    .miniSub{color:var(--muted); font-size:12px}
-    .metaRow{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px; position:relative}
-    .tag{padding:8px 10px; border-radius:999px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.10); font-size:12px; color:var(--muted)}
-
-    .grid2{display:grid; grid-template-columns: 1fr 1fr; gap:12px}
-    .stat{border:1px solid rgba(255,255,255,.10); border-radius:18px; padding:14px; background: rgba(255,255,255,.06)}
-    .stat b{display:block; font-size:14px; letter-spacing:.02em}
-    .stat span{color:var(--muted); font-size:12px}
-    .highlight{border-color: rgba(124,92,255,.22); background: rgba(124,92,255,.10)}
-
-    /* Sections */
-    section{padding:62px 0}
-    .sectionTitle{display:flex; align-items:flex-end; justify-content:space-between; gap:18px; margin-bottom:18px}
-    .sectionTitle h3{margin:0; font-size:22px; letter-spacing:.04em}
-    .sectionTitle p{margin:0; color:var(--muted); font-size:13px}
-    .divider{height:1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.14), transparent); margin: 16px 0 0}
-
-    .cards{display:grid; gap:14px; grid-template-columns: repeat(4, 1fr)}
-    .card{border:1px solid rgba(255,255,255,.10); border-radius: 20px; background: rgba(255,255,255,.06); padding:16px; min-height: 176px; box-shadow: var(--shadow2); transition: transform .18s ease, background .18s ease, border-color .18s ease; position:relative; overflow:hidden}
-    .card:hover{transform: translateY(-2px); background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.16)}
-    .icon{width:42px; height:42px; border-radius:16px; display:grid; place-items:center; background: rgba(124,92,255,.16); border: 1px solid rgba(124,92,255,.22); margin-bottom:12px}
-    .card h4{margin:0 0 8px; font-size:15px; letter-spacing:.02em}
-    .card p{margin:0 0 10px; color:var(--muted); font-size:13px}
-    .chipRow{display:flex; gap:8px; flex-wrap:wrap}
-    .chip{font-size:11px; color:rgba(255,255,255,.80); padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.12); background: rgba(0,0,0,.18)}
-
-    .twoCol{display:grid; gap:18px; grid-template-columns: 1fr 1fr; align-items:start}
-    .list{margin:0; padding-left:18px; color:var(--muted)}
-    .list li{margin:8px 0}
-
-    .steps{display:grid; gap:12px}
-    .step{display:flex; gap:12px; align-items:flex-start; padding:14px; border:1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.06); border-radius: 18px; box-shadow: var(--shadow2)}
-    .badge{min-width:36px; height:36px; border-radius:14px; display:grid; place-items:center; background: rgba(34,197,94,.16); border:1px solid rgba(34,197,94,.22); color: rgba(255,255,255,.92); font-weight:950}
-    .step b{display:block; margin:0 0 2px; letter-spacing:.02em}
-    .step span{color:var(--muted); font-size:13px}
-
-    /* Value */
-    .valueGrid{display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px}
-    .value{border:1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.06); border-radius: 20px; padding:16px; box-shadow: var(--shadow2)}
-    .value b{display:block; margin-bottom:6px; letter-spacing:.02em}
-    .value p{margin:0; color:var(--muted); font-size:13px}
-
-    /* Messages */
-    .msgGrid{display:grid; grid-template-columns: 1fr 1fr; gap:14px}
-    .msg{border:1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.06); border-radius: 22px; padding:18px; box-shadow: var(--shadow2)}
-    .msgTop{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:10px}
-    .msgName{font-weight:950; letter-spacing:.02em}
-    .msgRole{font-size:12px; color:var(--muted)}
-    .msg p{margin:0; color:rgba(255,255,255,.82); font-size:13.5px}
-
-    /* FAQ */
-    .faq{display:grid; gap:12px}
-    .qa{border:1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.06); border-radius: 18px; overflow:hidden; box-shadow: var(--shadow2)}
-    .qBtn{width:100%; text-align:left; padding:14px 14px; border:0; background: transparent; color: var(--txt); display:flex; justify-content:space-between; gap:12px; align-items:center; cursor:pointer; font-weight:900; letter-spacing:.01em}
-    .qBtn span{color:var(--muted); font-weight:800}
-    .ans{max-height:0; overflow:hidden; transition: max-height .25s ease; border-top:1px solid rgba(255,255,255,.10)}
-    .ansInner{padding:12px 14px; color:var(--muted); font-size:13px}
-    .qa.open .ans{max-height: 260px}
-
-    /* Contact */
-    .contactGrid{display:grid; gap:14px; grid-template-columns: 1.1fr .9fr}
-    .contactCard{border:1px solid rgba(255,255,255,.10); background: rgba(255,255,255,.06); border-radius: 22px; padding:18px; box-shadow: var(--shadow2)}
-    .contactCard h4{margin:0 0 8px; letter-spacing:.02em}
-    .contactCard p{margin:0; color:var(--muted); font-size:13px}
-    .callBox{margin-top:14px; padding:14px; border-radius: 20px; border:1px solid rgba(124,92,255,.30); background: rgba(124,92,255,.10)}
-    .callNum{font-size:22px; font-weight:950; letter-spacing:.02em; margin:6px 0 2px}
-    .callNote{color:rgba(255,255,255,.80); font-size:12px}
-
-    /* Footer */
-    footer{padding:30px 0 42px; border-top:1px solid rgba(255,255,255,.10); color:var(--muted)}
-    .foot{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap}
-    .foot a{color:var(--muted)}
-    .foot a:hover{color:var(--txt)}
-
-    /* Reveal */
-    .reveal{opacity:0; transform: translateY(12px); transition: opacity .5s ease, transform .5s ease}
-    .reveal.on{opacity:1; transform:none}
-
-    /* Responsive */
-    @media (max-width: 980px){
-      nav{display:none}
-      .hamburger{display:flex}
-      .heroGrid{grid-template-columns: 1fr}
-      .cards{grid-template-columns: repeat(2, 1fr)}
-      .twoCol{grid-template-columns: 1fr}
-      .valueGrid{grid-template-columns: 1fr}
-      .msgGrid{grid-template-columns: 1fr}
-      .contactGrid{grid-template-columns: 1fr}
-      .brand{min-width: auto}
-    }
-    @media (max-width: 520px){
-      .cards{grid-template-columns: 1fr}
-      .pill{padding:10px 12px}
-    }
-    @media (prefers-reduced-motion: reduce){
-      html{scroll-behavior:auto}
-      .orb{animation:none}
-      .reveal{transition:none}
-      .btn,.pill,.card{transition:none}
-    }
-  </style>
 </head>
+
 <body>
-  <a class="skip" href="#content">本文へスキップ</a>
+  <a class="skip" href="#main">本文へスキップ</a>
 
-  <div class="bgOrbs" aria-hidden="true">
-    <div class="orb one"></div>
-    <div class="orb two"></div>
-    <div class="orb three"></div>
-  </div>
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="合同会社C&O ホーム">
+        <span class="brand-mark" aria-hidden="true">C&O</span>
+        <span class="brand-text">
+          <span class="brand-name">合同会社C&O</span>
+          <span class="brand-tag">Clarity × Outcome</span>
+        </span>
+      </a>
 
-  <header>
-    <div class="container">
-      <div class="topbar">
-        <a class="brand" href="#top" aria-label="合同会社C&O トップへ">
-          <div class="mark" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="rgba(255,255,255,.85)" stroke-width="1.6"/>
-              <path d="M8.2 12c0 2.3 1.5 3.8 3.8 3.8 1 0 2-.3 2.7-.9l-1-1.4c-.5.4-1.1.6-1.7.6-1.4 0-2.3-.8-2.3-2.1 0-1.4.9-2.1 2.3-2.1.6 0 1.2.2 1.7.6l1-1.4c-.7-.6-1.7-.9-2.7-.9-2.3 0-3.8 1.5-3.8 3.8Z" fill="rgba(255,255,255,.9)"/>
-            </svg>
-          </div>
-          <div>
-            <h1>合同会社C&amp;O</h1>
-            <p>通信・サブスク推進／顧客獲得支援</p>
-          </div>
-        </a>
+      <nav class="nav" aria-label="主要メニュー">
+        <button class="nav-toggle" type="button" aria-controls="nav-panel" aria-expanded="false">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+          <span class="nav-toggle-label">メニュー</span>
+        </button>
 
-        <nav aria-label="サイト内ナビゲーション">
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#value">Value</a>
-          <a href="#message">Message</a>
-          <a href="#flow">Flow</a>
-          <a href="#faq">FAQ</a>
-          <a href="#company">Company</a>
-        </nav>
+        <div class="nav-panel" id="nav-panel">
+          <a class="nav-link" href="#about">私たちについて</a>
+          <a class="nav-link" href="#services">事業内容</a>
+          <a class="nav-link" href="#approach">進め方</a>
+          <a class="nav-link" href="#team">メンバー</a>
+          <a class="nav-link" href="#company">会社概要</a>
+          <a class="nav-link nav-cta" href="#contact">お問い合わせ</a>
 
-        <div class="rightControls">
-          <a class="pill primary" href="#contact">お問い合わせ</a>
-          <button class="hamburger" id="openMenu" aria-label="メニューを開く" aria-controls="mobileMenu" aria-expanded="false">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 7h16M4 12h16M4 17h16" stroke="rgba(255,255,255,.9)" stroke-width="1.7" stroke-linecap="round"/>
-            </svg>
+          <button class="theme-toggle" type="button" aria-label="テーマ切替">
+            <span class="theme-sun" aria-hidden="true">☀</span>
+            <span class="theme-moon" aria-hidden="true">☾</span>
           </button>
         </div>
-      </div>
+      </nav>
     </div>
   </header>
 
-  <!-- Mobile menu -->
-  <div class="menu" id="mobileMenu" aria-hidden="true">
-    <div class="sheet" role="dialog" aria-modal="true" aria-label="メニュー">
-      <div class="menuTop">
-        <div>
-          <div class="miniTitle">合同会社C&amp;O</div>
-          <div class="miniSub">ナビゲーション</div>
-        </div>
-        <button class="pill" id="closeMenu" aria-label="メニューを閉じる">閉じる</button>
-      </div>
-      <div class="menuLinks" role="navigation" aria-label="モバイルナビ">
-        <a href="#about" data-close>About</a>
-        <a href="#services" data-close>Services</a>
-        <a href="#value" data-close>Value</a>
-        <a href="#message" data-close>Message</a>
-        <a href="#flow" data-close>Flow</a>
-        <a href="#faq" data-close>FAQ</a>
-        <a href="#company" data-close>Company</a>
-        <a href="#contact" data-close>Contact</a>
-      </div>
-    </div>
-  </div>
-
-  <main id="top">
-    <div id="content"></div>
-
+  <main id="main">
     <!-- HERO -->
-    <div class="hero">
-      <div class="container">
-        <div class="heroGrid">
-          <div class="reveal">
-            <div class="kicker"><span class="dot" aria-hidden="true"></span> 複雑な選択を、シンプルに。提案だけで終わらせない。</div>
-            <h2 class="hTitle">通信・サブスクの推進と、<br/>顧客獲得を“実行”で支える。</h2>
-            <p class="lead">
-              合同会社C&amp;Oは、<b>携帯の乗り換え・料金見直し相談</b>、<b>サブスクリプションサービス推進代行</b>、<b>顧客獲得支援</b>を中心に、
-              お客様の目的に合わせて意思決定の整理から運用・改善まで伴走します。
-            </p>
-            <div class="heroActions">
-              <a class="btn primary" href="#contact" aria-label="お問い合わせへ">
-                <span>今すぐ相談する</span>
-                <span aria-hidden="true">→</span>
-              </a>
-              <a class="btn" href="#services">
-                <span>事業内容を見る</span>
-                <span aria-hidden="true">↓</span>
-              </a>
-              <a class="btn" href="#message" title="代表メッセージへ">
-                <span>代表メッセージ</span>
-                <span aria-hidden="true">↗</span>
-              </a>
+    <section class="hero" id="top">
+      <div class="bg-noise" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">通信・サブスク・顧客獲得支援</p>
+          <h1 class="hero-title reveal">
+            意思決定を“整理”し、<br />
+            実行と改善で成果を定着させる。
+          </h1>
+          <p class="hero-lead reveal">
+            合同会社C&Oは、携帯の乗り換え・料金見直し相談、サブスクリプション推進代行、
+            顧客獲得支援を中心に、現場で前に進めるための実務支援を提供します。
+          </p>
+
+          <div class="hero-actions reveal">
+            <a class="btn primary" href="#contact">相談してみる</a>
+            <a class="btn ghost" href="#services">事業内容を見る</a>
+          </div>
+
+          <div class="hero-meta reveal" role="list" aria-label="特徴">
+            <div class="meta-card" role="listitem">
+              <p class="meta-title">わかりやすさ</p>
+              <p class="meta-desc">専門用語をほどき、判断材料を整える。</p>
             </div>
-            <div class="divider"></div>
-            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:14px; color:var(--muted); font-size:12px">
-              <span class="chip">わかりやすい説明</span>
-              <span class="chip">実行・伴走</span>
-              <span class="chip">必要な分だけ支援</span>
-              <span class="chip">小さく始めて改善</span>
+            <div class="meta-card" role="listitem">
+              <p class="meta-title">誠実さ</p>
+              <p class="meta-desc">押し売りではなく、目的に合う選択肢。</p>
+            </div>
+            <div class="meta-card" role="listitem">
+              <p class="meta-title">再現性</p>
+              <p class="meta-desc">運用できる形に落として、改善を続ける。</p>
             </div>
           </div>
 
-          <aside class="panel reveal" aria-label="概要パネル">
-            <div class="metaRow">
-              <div>
-                <div class="miniTitle">C&amp;Oのスタンス</div>
-                <div class="miniSub">誠実・わかりやすく・成果へ</div>
-              </div>
-              <div class="tag">Saitama / Shiki</div>
+          <p class="note reveal">
+            ※C&Oは通信事業者ではありません。比較・意思決定・手続きの支援や運用設計を提供します。
+          </p>
+        </div>
+
+        <div class="hero-card reveal" aria-label="要点カード">
+          <div class="hero-card-top">
+            <p class="hero-card-kicker">What we do</p>
+            <p class="hero-card-title">「迷い」を減らす設計。</p>
+          </div>
+
+          <div class="bento">
+            <div class="bento-item">
+              <p class="bento-title">1. 整理</p>
+              <p class="bento-desc">状況・目的・制約を言語化。</p>
             </div>
-
-            <div class="grid2">
-              <div class="stat">
-                <b>通信の最適化</b>
-                <span>乗り換え／料金見直し</span>
-              </div>
-              <div class="stat">
-                <b>推進代行</b>
-                <span>サブスク導入・運用</span>
-              </div>
-              <div class="stat">
-                <b>獲得支援</b>
-                <span>集客・導線づくり</span>
-              </div>
-              <div class="stat">
-                <b>実行重視</b>
-                <span>提案→運用まで</span>
-              </div>
+            <div class="bento-item">
+              <p class="bento-title">2. 比較</p>
+              <p class="bento-desc">選択肢を並べ、判断軸を作る。</p>
             </div>
-
-            <div style="height:12px"></div>
-
-            <div class="stat highlight">
-              <b>まずは状況整理から</b>
-              <span>目的・優先順位を整理して、次の一手を明確にします。</span>
+            <div class="bento-item">
+              <p class="bento-title">3. 実行</p>
+              <p class="bento-desc">手続き/導入/導線を形に。</p>
             </div>
-
-            <div style="height:12px"></div>
-
-            <div style="display:flex; gap:10px; align-items:flex-start; padding:12px; border-radius: 18px; border:1px solid rgba(34,197,94,.22); background: rgba(34,197,94,.10); color: rgba(255,255,255,.88); font-size:12px">
-              <div>✅</div>
-              <div>
-                <b>ご相談はお電話で受付</b><br/>
-                090-4074-6950
-              </div>
+            <div class="bento-item">
+              <p class="bento-title">4. 改善</p>
+              <p class="bento-desc">運用しながら“効く打ち手”へ。</p>
             </div>
-          </aside>
+          </div>
+
+          <div class="hero-card-bottom">
+            <a class="inline" href="#approach">進め方を見る<span aria-hidden="true"> →</span></a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ABOUT -->
-    <section id="about">
+    <section class="section" id="about">
       <div class="container">
-        <div class="sectionTitle reveal">
-          <div>
-            <h3>About</h3>
-            <p>私たちについて</p>
-          </div>
-          <p>情報が複雑なほど、判断は“見える化”が効きます。</p>
+        <div class="section-head">
+          <h2 class="section-title reveal">私たちについて</h2>
+          <p class="section-lead reveal">
+            「分かる」だけでは前に進めません。<br />
+            納得して決められる状態をつくり、実行と改善で成果につなげます。
+          </p>
         </div>
 
-        <div class="twoCol">
-          <div class="panel reveal">
-            <div style="font-weight:950; margin-bottom:8px; letter-spacing:.02em">合同会社C&amp;Oは、通信・サブスク領域の実務支援会社です。</div>
-            <div style="color:var(--muted); font-size:14px">
-              携帯の乗り換えや料金見直しに関する相談対応、サブスクリプションサービスの推進代行、顧客獲得支援など、
-              <b>現場で動かす</b>ことに重きを置いた支援を提供しています。<br/><br/>
-              「分かる」だけでは前に進めません。迷いを減らし、納得して決められる状態をつくり、
-              実行と改善で成果につなげます。
-            </div>
+        <div class="grid two reveal">
+          <div class="panel">
+            <h3 class="panel-title">C&Oが大切にしていること</h3>
+            <ul class="bullets">
+              <li><strong>わかりやすさ：</strong>判断材料を整理し、結論までの道筋を見える化。</li>
+              <li><strong>誠実さ：</strong>目的に合わない提案はしない。選ぶための情報を出す。</li>
+              <li><strong>再現性：</strong>属人化を減らし、運用できる仕組みに落とし込む。</li>
+              <li><strong>最短距離：</strong>小さく始め、効く打ち手に集中して改善する。</li>
+            </ul>
           </div>
 
-          <div class="panel reveal">
-            <div style="font-weight:950; margin-bottom:10px; letter-spacing:.02em">大切にしていること</div>
-            <ul class="list">
-              <li><b>わかりやすさ：</b>専門用語をかみ砕き、意思決定の材料を整理</li>
-              <li><b>誠実さ：</b>押し売りではなく、目的に合う選択肢を提示</li>
-              <li><b>再現性：</b>運用できる形に落とし込み、継続改善へ</li>
-              <li><b>最短距離：</b>小さく始めて、効く打ち手に集中</li>
-            </ul>
+          <div class="panel">
+            <h3 class="panel-title">こんな課題で相談されています</h3>
+            <div class="tags" aria-label="相談例">
+              <span class="tag">携帯料金が複雑で判断できない</span>
+              <span class="tag">乗り換え手続きが不安</span>
+              <span class="tag">サブスクの訴求が伸びない</span>
+              <span class="tag">導入後の継続率を上げたい</span>
+              <span class="tag">獲得導線がつながらない</span>
+              <span class="tag">提案資料が毎回ブレる</span>
+            </div>
+
+            <div class="callout">
+              <p class="callout-title">ポイント</p>
+              <p class="callout-text">
+                「何を決めればいいか」が曖昧な状態からスタートして大丈夫です。
+                目的と制約を一緒に整理し、実行できる形へ落とし込みます。
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section id="services">
+    <section class="section alt" id="services">
       <div class="container">
-        <div class="sectionTitle reveal">
-          <div>
-            <h3>Services</h3>
-            <p>事業内容</p>
-          </div>
-          <p>必要なところから、必要な分だけ。</p>
+        <div class="section-head">
+          <h2 class="section-title reveal">事業内容</h2>
+          <p class="section-lead reveal">現場で「動かす」ことに重きを置いた支援を提供します。</p>
         </div>
 
-        <div class="cards">
-          <div class="card reveal">
-            <div class="icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" stroke="rgba(255,255,255,.88)" stroke-width="1.6"/>
-                <path d="M10 19h4" stroke="rgba(255,255,255,.88)" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <h4>携帯の乗り換えサポート</h4>
-            <p>条件整理・比較・手続きの不安解消まで。状況に合う選択を一緒に整えます。</p>
-            <div class="chipRow">
-              <span class="chip">条件整理</span><span class="chip">比較</span><span class="chip">手続きサポート</span>
-            </div>
-          </div>
+        <div class="cards reveal">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">↔</div>
+            <h3 class="card-title">携帯の乗り換えサポート</h3>
+            <p class="card-text">条件整理・比較・手続きの不安解消まで。状況に合う選択を一緒に整えます。</p>
+            <ul class="mini">
+              <li>現状ヒアリング・目的整理</li>
+              <li>比較表作成（費用/制約/優先度）</li>
+              <li>手続き・移行の段取り支援</li>
+            </ul>
+          </article>
 
-          <div class="card reveal">
-            <div class="icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="rgba(255,255,255,.88)" stroke-width="1.6"/>
-                <path d="M12 7v6l4 2" stroke="rgba(255,255,255,.88)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h4>携帯キャリア相談（料金見直し）</h4>
-            <p>契約・用途・コストを整理し、無理のない最適化を提案します。</p>
-            <div class="chipRow">
-              <span class="chip">料金最適化</span><span class="chip">契約整理</span><span class="chip">用途設計</span>
-            </div>
-          </div>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">¥</div>
+            <h3 class="card-title">携帯キャリア相談（料金見直し）</h3>
+            <p class="card-text">契約・用途・コストを整理し、無理のない最適化を提案します。</p>
+            <ul class="mini">
+              <li>契約内容の棚卸し</li>
+              <li>無駄の特定と最適化案</li>
+              <li>変更のリスク・注意点の説明</li>
+            </ul>
+          </article>
 
-          <div class="card reveal">
-            <div class="icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 7l-8 10L4 11" stroke="rgba(255,255,255,.88)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h4>サブスクリプション推進代行</h4>
-            <p>導入設計〜訴求〜運用改善まで。継続利用につながる仕組みをつくります。</p>
-            <div class="chipRow">
-              <span class="chip">導入設計</span><span class="chip">訴求</span><span class="chip">改善</span>
-            </div>
-          </div>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">∞</div>
+            <h3 class="card-title">サブスクリプション推進代行</h3>
+            <p class="card-text">導入設計〜訴求〜運用改善まで。継続利用につながる仕組みをつくります。</p>
+            <ul class="mini">
+              <li>導入設計（対象/導線/訴求）</li>
+              <li>スクリプト/FAQ/資料整備</li>
+              <li>KPI運用・改善サイクル</li>
+            </ul>
+          </article>
 
-          <div class="card reveal">
-            <div class="icon" aria-hidden="true">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 19V5M4 19h16" stroke="rgba(255,255,255,.88)" stroke-width="1.6" stroke-linecap="round"/>
-                <path d="M8 15l3-3 3 2 4-5" stroke="rgba(255,255,255,.88)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h4>顧客獲得支援</h4>
-            <p>集客導線の設計、提案資料の整備、改善まで“獲得の仕組み”を支援します。</p>
-            <div class="chipRow">
-              <span class="chip">導線設計</span><span class="chip">提案強化</span><span class="chip">改善</span>
-            </div>
-          </div>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">◎</div>
+            <h3 class="card-title">顧客獲得支援</h3>
+            <p class="card-text">集客導線の設計、提案資料の整備、改善まで“獲得の仕組み”を支援します。</p>
+            <ul class="mini">
+              <li>導線設計（入口→提案→成約）</li>
+              <li>提案資料/トーク整備</li>
+              <li>改善・検証の運用</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="service-note reveal">
+          <p><strong>支援形態：</strong>スポット相談 / 実務伴走（月次）/ 立ち上げ支援（短期集中）</p>
+          <p class="muted">※費用・期間は目的と状況により変動します。まずは課題の整理からご相談ください。</p>
         </div>
       </div>
     </section>
 
-    <!-- VALUE -->
-    <section id="value">
+    <!-- APPROACH -->
+    <section class="section" id="approach">
       <div class="container">
-        <div class="sectionTitle reveal">
-          <div>
-            <h3>Value</h3>
-            <p>選ばれる理由</p>
-          </div>
-          <p>「分かる」ではなく「進む」へ。</p>
+        <div class="section-head">
+          <h2 class="section-title reveal">進め方</h2>
+          <p class="section-lead reveal">「小さく始めて、効く打ち手に集中」するための進め方です。</p>
         </div>
 
-        <div class="valueGrid">
-          <div class="value reveal">
-            <b>判断の“見える化”</b>
-            <p>条件や優先順位を整理し、比較できる状態に整えます。迷いを減らし、決断を速く。</p>
-          </div>
-          <div class="value reveal">
-            <b>提案だけで終わらない</b>
-            <p>手続き・導入・運用まで。実行可能な形に落とし込み、成果が出るところまで伴走します。</p>
-          </div>
-          <div class="value reveal">
-            <b>必要な分だけ支援</b>
-            <p>丸投げでも、一部支援でも。いま必要な範囲に集中するので、無理なく始められます。</p>
-          </div>
+        <ol class="steps reveal">
+          <li class="step">
+            <div class="step-no">01</div>
+            <div class="step-body">
+              <h3 class="step-title">ヒアリング & 整理</h3>
+              <p class="step-text">目的・制約・理想像を整理し、決めるべきことを明確にします。</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-no">02</div>
+            <div class="step-body">
+              <h3 class="step-title">比較 & 設計</h3>
+              <p class="step-text">判断軸に沿って選択肢を比較し、実行可能な計画に落とし込みます。</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-no">03</div>
+            <div class="step-body">
+              <h3 class="step-title">実行</h3>
+              <p class="step-text">手続き・導入・導線構築など、現場で“動く形”まで伴走します。</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-no">04</div>
+            <div class="step-body">
+              <h3 class="step-title">運用 & 改善</h3>
+              <p class="step-text">数値と現場の声を踏まえて改善。再現性のある運用へ育てます。</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="quote reveal">
+          <p class="quote-text">
+            “正解を並べる”のではなく、<strong>運用できる形にして、試して、改善する</strong>。
+            それが、成果を長く残す最短ルートだと考えています。
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- MESSAGE -->
-    <section id="message">
+    <!-- TEAM -->
+    <section class="section alt" id="team">
       <div class="container">
-        <div class="sectionTitle reveal">
-          <div>
-            <h3>Message</h3>
-            <p>代表メッセージ</p>
-          </div>
-          <p>信頼は、目に見える誠実さから。</p>
+        <div class="section-head">
+          <h2 class="section-title reveal">メンバー</h2>
+          <p class="section-lead reveal">それぞれの強みを持ち寄り、現場を前に進めます。</p>
         </div>
 
-        <div class="msgGrid">
-          <div class="msg reveal">
-            <div class="msgTop">
-              <div>
-                <div class="msgName">栗山 隼輔</div>
-                <div class="msgRole">代表社員</div>
+        <div class="people reveal">
+          <article class="person">
+            <div class="avatar" aria-hidden="true"><span>HK</span></div>
+            <div class="person-body">
+              <div class="person-head">
+                <h3 class="person-name">栗山 隼輔</h3>
+                <p class="person-role">代表社員 / Executive</p>
               </div>
-              <div class="tag">Executive</div>
+              <p class="person-msg">
+                私たちは「分かりにくいものを、分かりやすくする」ことを仕事の中心に置いています。
+                情報が増えるほど判断が難しくなる領域だからこそ、状況を整理し、比較し、実行できる形へ落とし込み、
+                成果が定着するまで伴走します。ひとつひとつの相談に誠実に向き合い、安心して任せていただける存在でありたいと思っています。
+              </p>
             </div>
-            <p>
-              私たちは「分かりにくいものを、分かりやすくする」ことを仕事の中心に置いています。
-              通信の選択肢、サービスの推進、顧客獲得の導線――どれも情報が増えるほど判断が難しくなります。
-              だからこそC&amp;Oは、状況を整理し、比較し、実行できる形へ落とし込み、成果が定着するまで伴走します。
-              ひとつひとつの相談に誠実に向き合い、安心して任せていただける存在でありたいと思っています。
-            </p>
-          </div>
+          </article>
 
-          <div class="msg reveal">
-            <div class="msgTop">
-              <div>
-                <div class="msgName">栗山 翔太朗</div>
-                <div class="msgRole">代表社員（42Tokyo 在学）</div>
+          <article class="person">
+            <div class="avatar" aria-hidden="true"><span>SK</span></div>
+            <div class="person-body">
+              <div class="person-head">
+                <h3 class="person-name">栗山 翔太朗</h3>
+                <p class="person-role">代表社員（42Tokyo 在学）/ Engineering</p>
               </div>
-              <div class="tag">Engineering</div>
+              <p class="person-msg">
+                42Tokyoで学んでいるのは、知識だけではなく「動くものをつくり、改善し続ける姿勢」です。
+                机上の正解を並べるのではなく、実際に運用できる形にして、小さく試して、改善していく。
+                C&Oはこのスタイルで、通信・サブスク・獲得支援を“現場で”前に進めます。目的に本気で向き合い、最短距離で成果につながる道筋を一緒に作ります。
+              </p>
             </div>
-            <p>
-              42Tokyoで学んでいるのは、知識だけではなく「動くものをつくり、改善し続ける姿勢」です。
-              その考え方は、ビジネスでも同じだと感じています。
-              机上の正解を並べるのではなく、実際に運用できる形にして、小さく試して、改善していく。
-              C&amp;Oはこのスタイルで、通信・サブスク・獲得支援を“現場で”前に進めます。
-              お客様の目的に本気で向き合い、最短距離で成果につながる道筋を一緒に作ります。
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+          </article>
 
-    <!-- FLOW -->
-    <section id="flow">
-      <div class="container">
-        <div class="sectionTitle reveal">
-          <div>
-            <h3>Flow</h3>
-            <p>ご利用の流れ</p>
-          </div>
-          <p>最短で、無理なく。</p>
-        </div>
-
-        <div class="twoCol">
-          <div class="steps">
-            <div class="step reveal">
-              <div class="badge">1</div>
-              <div>
-                <b>お電話でお問い合わせ</b>
-                <span>090-4074-6950 までご連絡ください。</span>
+          <article class="person">
+            <div class="avatar" aria-hidden="true"><span>TA</span></div>
+            <div class="person-body">
+              <div class="person-head">
+                <h3 class="person-name">青木 毅（Tsuyoshi Aoki）</h3>
+                <p class="person-role">執行役員 / Business & Communication</p>
               </div>
+              <p class="person-msg">
+                人は、情報だけでは動けません。<strong>「自分に合う」と腹落ちした瞬間</strong>に、行動が始まります。
+                雑誌モデル、テーマパークキャスト、アパレルブランドでの経験を通じて、
+                伝え方・見せ方・コミュニケーションが体験の質を決めると学びました。
+                C&Oでは、提案の言葉、資料の見せ方、導線のつくり方まで整え、
+                お客様が自然に選べる状態をつくります。納得できる選択が、日々の安心と成果につながるよう伴走します。
+              </p>
+              <p class="person-meta muted">
+                合同会社NEX'SMA代表 / Fashion Consultant（SNS「WEAR」フォロワー1万人超・累計接客数50,000人以上）
+              </p>
             </div>
-            <div class="step reveal">
-              <div class="badge">2</div>
-              <div>
-                <b>ヒアリング／状況整理</b>
-                <span>現状・条件・優先順位を一緒に整理します。</span>
-              </div>
-            </div>
-            <div class="step reveal">
-              <div class="badge">3</div>
-              <div>
-                <b>提案（選択肢の比較）</b>
-                <span>メリット・注意点を分かりやすく提示し、納得して選べる状態にします。</span>
-              </div>
-            </div>
-            <div class="step reveal">
-              <div class="badge">4</div>
-              <div>
-                <b>実行／運用／改善</b>
-                <span>必要な範囲で伴走し、成果が定着するところまで支援します。</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="panel reveal">
-            <div style="font-weight:950; margin-bottom:10px; letter-spacing:.02em">相談の出発点</div>
-            <div style="color:var(--muted); font-size:14px">
-              「何をどう選べばいいか分からない」状態で大丈夫です。
-              まずは状況を整理して、次の一手を明確にします。
-            </div>
-            <div style="height:12px"></div>
-            <a class="pill primary" href="#contact" style="width:100%">お問い合わせへ →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq">
-      <div class="container">
-        <div class="sectionTitle reveal">
-          <div>
-            <h3>FAQ</h3>
-            <p>よくある質問</p>
-          </div>
-          <p>不安を、先に解消。</p>
-        </div>
-
-        <div class="faq">
-          <div class="qa reveal">
-            <button class="qBtn" type="button"><div>相談はどの段階から可能ですか？</div><span>＋</span></button>
-            <div class="ans"><div class="ansInner">「何が分からないか分からない」段階でも大丈夫です。現状・目的・優先順位を一緒に整理し、次の一手を明確にします。</div></div>
-          </div>
-          <div class="qa reveal">
-            <button class="qBtn" type="button"><div>一部だけお願いできますか？</div><span>＋</span></button>
-            <div class="ans"><div class="ansInner">可能です。「比較だけ」「手続きの不安解消だけ」「推進・運用だけ」など、必要な範囲に合わせて対応します。</div></div>
-          </div>
-          <div class="qa reveal">
-            <button class="qBtn" type="button"><div>個人・法人どちらも相談できますか？</div><span>＋</span></button>
-            <div class="ans"><div class="ansInner">個人・法人いずれもご相談可能です。内容に応じて、支援範囲・進め方をご提案します。</div></div>
-          </div>
-          <div class="qa reveal">
-            <button class="qBtn" type="button"><div>訪問や対面での対応は可能ですか？</div><span>＋</span></button>
-            <div class="ans"><div class="ansInner">内容により可能です。まずはお電話にてご相談ください。</div></div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- COMPANY -->
-    <section id="company">
+    <section class="section" id="company">
       <div class="container">
-        <div class="sectionTitle reveal">
-          <div>
-            <h3>Company</h3>
-            <p>会社概要</p>
-          </div>
-          <p>基本情報</p>
+        <div class="section-head">
+          <h2 class="section-title reveal">会社概要</h2>
+          <p class="section-lead reveal">基本情報</p>
         </div>
 
-        <div class="panel reveal">
-          <div style="display:grid; gap:12px">
-            <div style="display:flex; gap:10px; flex-wrap:wrap"><div style="min-width:160px; color:var(--muted)">会社名</div><div>合同会社C&amp;O</div></div>
-            <div style="display:flex; gap:10px; flex-wrap:wrap"><div style="min-width:160px; color:var(--muted)">代表者</div><div>栗山 隼輔 ／ 栗山 翔太朗</div></div>
-            <div style="display:flex; gap:10px; flex-wrap:wrap"><div style="min-width:160px; color:var(--muted)">所在地</div><div>〒（353-0001） 埼玉県志木市上宗岡4-20-10</div></div>
-            <div style="display:flex; gap:10px; flex-wrap:wrap"><div style="min-width:160px; color:var(--muted)">連絡先</div><div><a class="pill" href="tel:09040746950" aria-label="電話をかける">090-4074-6950</a></div></div>
-            <div style="display:flex; gap:10px; flex-wrap:wrap"><div style="min-width:160px; color:var(--muted)">主な事業</div><div>携帯の乗り換え・料金見直し相談／携帯キャリア相談／サブスクリプションサービス推進代行／顧客獲得支援</div></div>
-            <div class="divider"></div>
-            <div style="display:flex; gap:12px; flex-wrap:wrap">
-              <a class="pill" href="https://www.google.com/maps?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%BF%97%E6%9C%A8%E5%B8%82%E4%B8%8A%E5%AE%97%E5%B2%A14-20-10" target="_blank" rel="noopener">地図で見る</a>
-              <a class="pill" href="#privacy" id="privacyLink">プライバシーポリシー</a>
+        <div class="grid two reveal">
+          <div class="panel">
+            <dl class="dl">
+              <div class="dl-row">
+                <dt>会社名</dt>
+                <dd>合同会社C&O</dd>
+              </div>
+              <div class="dl-row">
+                <dt>代表者</dt>
+                <dd>栗山 隼輔 ／ 栗山 翔太朗</dd>
+              </div>
+              <div class="dl-row">
+                <dt>所在地</dt>
+                <dd>〒353-0001 埼玉県志木市上宗岡4-20-10</dd>
+              </div>
+              <div class="dl-row">
+                <dt>連絡先</dt>
+                <dd><a class="inline" href="tel:+819040746950">090-4074-6950</a></dd>
+              </div>
+              <div class="dl-row">
+                <dt>主な事業</dt>
+                <dd>
+                  携帯の乗り換え・料金見直し相談／携帯キャリア相談／サブスクリプションサービス推進代行／顧客獲得支援
+                </dd>
+              </div>
+            </dl>
+
+            <p class="muted">
+              地図：<a class="inline" href="https://www.google.com/maps?q=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%BF%97%E6%9C%A8%E5%B8%82%E4%B8%8A%E5%AE%97%E5%B2%A14-20-10" target="_blank" rel="noopener noreferrer">Google Mapsで開く</a>
+            </p>
+          </div>
+
+          <div class="panel">
+            <h3 class="panel-title">補足</h3>
+            <ul class="bullets">
+              <li>オンラインでのご相談が中心です（必要に応じて訪問も可）。</li>
+              <li>相談内容に応じて、支援範囲（整理/比較/実行/改善）を柔軟に設計します。</li>
+              <li>守秘義務を前提に、資料・数値・運用フローの整備まで対応します。</li>
+            </ul>
+
+            <div class="callout">
+              <p class="callout-title">対応領域の例</p>
+              <p class="callout-text">通信費の最適化／サブスク導入推進／獲得導線（提案〜成約）の設計と運用改善</p>
             </div>
           </div>
         </div>
@@ -772,155 +430,77 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact">
+    <section class="section alt" id="contact">
       <div class="container">
-        <div class="sectionTitle reveal">
-          <div>
-            <h3>Contact</h3>
-            <p>お問い合わせ</p>
-          </div>
-          <p>お電話で承ります。</p>
+        <div class="section-head">
+          <h2 class="section-title reveal">お問い合わせ</h2>
+          <p class="section-lead reveal">まずは状況を伺い、進め方をご提案します。</p>
         </div>
 
-        <div class="contactGrid">
-          <div class="contactCard reveal">
-            <h4>ご相談内容の例</h4>
-            <p>携帯の乗り換え・料金見直し、サブスク推進、顧客獲得の導線づくりなど。まずは状況から整理します。</p>
-            <div class="divider"></div>
-            <ul class="list" style="margin-top:12px">
-              <li>携帯の乗り換えを検討しているが、条件が分からない</li>
-              <li>料金・契約を整理して、ムダを減らしたい</li>
-              <li>サブスクリプションサービスの推進を任せたい</li>
-              <li>顧客獲得の導線を作りたい／改善したい</li>
-            </ul>
+        <div class="grid two reveal">
+          <div class="panel">
+            <h3 class="panel-title">お電話</h3>
+            <p class="big">
+              <a class="inline" href="tel:+819040746950">090-4074-6950</a>
+            </p>
+            <p class="muted">受付：10:00〜18:00（目安）</p>
+
+            <h3 class="panel-title spacer">メール</h3>
+            <p class="big">
+              <a class="inline" href="mailto:akasabu36@gmail.com">akasabu36@gmail.com</a>
+            </p>
+            <p class="muted">24時間受付（返信は営業時間内）</p>
           </div>
 
-          <div class="contactCard reveal">
-            <h4>お電話はこちら</h4>
-            <p>不在の場合は折り返しご連絡いたします。</p>
-            <div class="callBox">
-              <div class="callNum">090-4074-6950</div>
-              <div class="callNote">タップで発信できます</div>
-              <div style="height:10px"></div>
-              <a class="btn primary" href="tel:09040746950" style="width:100%; justify-content:center">電話をかける →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="panel">
+            <h3 class="panel-title">フォーム</h3>
 
-    <!-- CTA -->
-    <section style="padding-top:0">
-      <div class="container">
-        <div class="panel reveal" style="display:flex; align-items:center; justify-content:space-between; gap:14px; flex-wrap:wrap">
-          <div>
-            <div style="font-weight:950; font-size:18px; letter-spacing:.02em">まずは“状況整理”からでも大丈夫です。</div>
-            <div style="color:var(--muted); font-size:13px">無理のない範囲で、一緒に最適解を見つけます。</div>
+            <form class="form" id="contact-form" novalidate>
+              <label>
+                <span>お名前</span>
+                <input name="name" type="text" autocomplete="name" required />
+              </label>
+
+              <label>
+                <span>ご連絡先（メール or 電話）</span>
+                <input name="contact" type="text" autocomplete="email" required />
+              </label>
+
+              <label>
+                <span>ご相談内容</span>
+                <textarea name="message" rows="5" required placeholder="例）携帯料金を見直したい／サブスクの訴求を改善したい など"></textarea>
+              </label>
+
+              <button class="btn primary" type="submit">送信する</button>
+              <p class="form-note muted" id="form-note" role="status" aria-live="polite"></p>
+              <p class="muted small">※返信までお時間をいただく場合があります。</p>
+            </form>
           </div>
-          <a class="btn primary" href="tel:09040746950">今すぐ電話する →</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <div class="foot">
-        <div>© <span id="y"></span> 合同会社C&amp;O</div>
-        <div style="display:flex; gap:14px; flex-wrap:wrap">
-          <a href="#company">会社概要</a>
-          <a href="#contact">お問い合わせ</a>
-          <a href="#privacy" id="privacyLink2">プライバシーポリシー</a>
-        </div>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-brand">合同会社C&O</p>
+        <p class="muted small">Clarity × Outcome</p>
       </div>
+
+      <div class="footer-right">
+        <a class="footer-link" href="#about">About</a>
+        <a class="footer-link" href="#services">Services</a>
+        <a class="footer-link" href="#contact">Contact</a>
+        <a class="footer-link" href="#top">Top ↑</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="muted small">© <span id="year"></span> C&O LLC. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Privacy modal -->
-  <div id="modal" style="position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,.58); backdrop-filter: blur(10px); z-index:200; padding:18px">
-    <div id="privacy" style="width:min(860px, 94vw); max-height: 86vh; overflow:auto; border-radius: 22px; border:1px solid rgba(255,255,255,.14); background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.06)); box-shadow: var(--shadow); padding:18px">
-      <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px; margin-bottom:10px">
-        <div>
-          <div style="font-weight:950; letter-spacing:.02em">プライバシーポリシー</div>
-          <div style="color:var(--muted); font-size:12px">合同会社C&amp;O</div>
-        </div>
-        <button class="pill" id="closeModal" type="button">閉じる</button>
-      </div>
-      <div style="color:var(--muted); font-size:13px">
-        <p>合同会社C&amp;O（以下「当社」）は、当社が取得する個人情報について、個人情報保護に関する法令等を遵守し、適切に取り扱います。</p>
-        <p><b>1. 取得する情報</b><br/>当社へのお問い合わせに際して提供される氏名、電話番号、メールアドレス（提供された場合）、その他お問い合わせ内容等。</p>
-        <p><b>2. 利用目的</b><br/>お問い合わせ対応、サービス提供・案内、品質向上のための分析。</p>
-        <p><b>3. 第三者提供</b><br/>法令に基づく場合を除き、本人の同意なく第三者へ提供しません。</p>
-        <p><b>4. 安全管理</b><br/>個人情報の漏えい、滅失、毀損の防止のため、適切な安全管理措置を講じます。</p>
-        <p><b>5. 開示等</b><br/>本人からの開示・訂正・削除等の請求があった場合、合理的な範囲で対応します。</p>
-        <p><b>6. お問い合わせ窓口</b><br/>電話：090-4074-6950</p>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    // Year
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // Mobile menu
-    const menu = document.getElementById('mobileMenu');
-    const openMenu = document.getElementById('openMenu');
-    const closeMenu = document.getElementById('closeMenu');
-
-    function setMenu(open){
-      menu.style.display = open ? 'block' : 'none';
-      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
-      openMenu.setAttribute('aria-expanded', open ? 'true' : 'false');
-      if(open){ setTimeout(()=> closeMenu.focus(), 0); }
-      else { openMenu.focus(); }
-    }
-
-    openMenu?.addEventListener('click', ()=> setMenu(true));
-    closeMenu?.addEventListener('click', ()=> setMenu(false));
-    menu?.addEventListener('click', (e)=>{ if(e.target === menu) setMenu(false); });
-    menu?.querySelectorAll('[data-close]')?.forEach(a=> a.addEventListener('click', ()=> setMenu(false)));
-
-    // FAQ accordion
-    document.querySelectorAll('.qa').forEach((qa)=>{
-      const btn = qa.querySelector('.qBtn');
-      const plus = btn.querySelector('span');
-      btn.addEventListener('click', ()=>{
-        const isOpen = qa.classList.toggle('open');
-        plus.textContent = isOpen ? '－' : '＋';
-      });
-    });
-
-    // Reveal
-    const io = new IntersectionObserver((entries)=>{
-      entries.forEach(ent=>{
-        if(ent.isIntersecting){
-          ent.target.classList.add('on');
-          io.unobserve(ent.target);
-        }
-      });
-    }, {threshold: 0.12});
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-
-    // Privacy modal
-    const modal = document.getElementById('modal');
-    const privacyLink = document.getElementById('privacyLink');
-    const privacyLink2 = document.getElementById('privacyLink2');
-    const closeModalBtn = document.getElementById('closeModal');
-
-    function openModal(){ modal.style.display = 'flex'; setTimeout(()=> closeModalBtn.focus(), 0); }
-    function closeModal(){ modal.style.display = 'none'; }
-
-    privacyLink?.addEventListener('click', (e)=>{ e.preventDefault(); openModal(); });
-    privacyLink2?.addEventListener('click', (e)=>{ e.preventDefault(); openModal(); });
-    closeModalBtn?.addEventListener('click', closeModal);
-    modal?.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
-
-    document.addEventListener('keydown', (e)=>{
-      if(e.key === 'Escape'){
-        if(menu.style.display === 'block') setMenu(false);
-        if(modal.style.display === 'flex') closeModal();
-      }
-    });
-  </script>
+  <script src="script.js" defer></script>
 </body>
 </html>
